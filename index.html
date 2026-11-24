@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Checklist de preparación para el segundo parcial de Física 1.">
+  <title>Física 1 | Checklist del segundo parcial</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./plan.js" defer></script>
+  <script src="./progress.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#plan">Ir a los ejercicios</a>
+  <header class="masthead">
+    <a class="brand" href="./" aria-label="Checklist de Física 1, inicio"><span class="brand-mark" aria-hidden="true">F</span> Física 1</a>
+    <button id="backup-open" class="text-button" type="button">Guardar y sincronizar</button>
+  </header>
+  <main class="shell">
+    <header class="intro">
+      <p class="eyebrow">Evaluación · Miércoles 25 de noviembre</p>
+      <h1>Segundo parcial</h1>
+      <p>Resolvé un inciso por vez. Cuando puedas rehacerlo y justificarlo sin ayuda, marcá <strong>Rehecho</strong>.</p>
+    </header>
+    <div class="dashboard">
+      <div class="study">
+        <section class="next" aria-labelledby="next-title">
+          <p class="eyebrow">Tu próximo paso</p>
+          <h2 id="next-title">Preparando la lista…</h2>
+          <p id="next-detail"></p>
+          <button id="next-button" class="primary" type="button">Ir al ejercicio <span aria-hidden="true">↓</span></button>
+        </section>
+        <section id="plan" aria-labelledby="plan-title">
+          <div class="plan-heading">
+            <h2 id="plan-title">Plan de práctica</h2>
+            <div class="filters" role="group" aria-label="Filtrar ejercicios">
+              <button type="button" data-filter="all" aria-pressed="true">Todos</button>
+              <button type="button" data-filter="pending" aria-pressed="false">Por hacer</button>
+            </div>
+          </div>
+          <div id="exercises"></div>
+          <p id="empty" class="empty" hidden>Terminaste el plan principal. El repaso de proyecciones queda disponible en Todos.</p>
+        </section>
+      </div>
+      <aside class="sidebar" aria-label="Progreso y método de estudio">
+        <section class="panel progress-panel" aria-labelledby="progress-title">
+          <p class="eyebrow">Tu progreso</p>
+          <h2 id="progress-title"><span id="progress-count">0</span><span class="progress-total"> / <span id="progress-total">0</span></span></h2>
+          <p class="small">incisos rehechos sin ayuda</p>
+          <progress id="progress-meter" aria-label="Incisos rehechos sin ayuda" max="1" value="0"></progress>
+          <p id="save-status" class="save-status" role="status">Guardado en este navegador</p>
+        </section>
+        <section class="panel method-panel">
+          <h2>Cómo hacer cada inciso</h2>
+          <ol>
+            <li>Marcá qué te piden y hacé un dibujo.</li>
+            <li>Intentá elegir la ley. Si a los 10 min seguís trabado, abrí la pista.</li>
+            <li>Anotá el primer error y volvé a resolverlo sin mirar.</li>
+          </ol>
+        </section>
+      </aside>
+    </div>
+    <noscript>Activá JavaScript para usar la checklist y guardar el progreso.</noscript>
+  </main>
+  <dialog id="backup" aria-labelledby="backup-title">
+    <form method="dialog" class="dialog-header">
+      <h2 id="backup-title">Guardar y sincronizar</h2>
+      <button class="text-button" aria-label="Cerrar" value="close">Cerrar</button>
+    </form>
+    <p>La checklist guarda tus cambios en este navegador. Podés vincular un archivo de progreso en una carpeta de OneDrive o Google Drive para escritorio.</p>
+    <div id="file-actions" class="backup-actions">
+      <button type="button" class="primary" id="new-backup">Crear archivo vinculado</button>
+      <button type="button" class="secondary" id="link-backup">Vincular archivo existente</button>
+      <button type="button" class="secondary" id="refresh-backup" hidden>Sincronizar ahora</button>
+      <button type="button" class="text-button" id="unlink-backup" hidden>Desvincular archivo</button>
+      <p class="small">La primera vez, elegí tu carpeta sincronizada. En otra computadora, vinculá el mismo archivo cuando termine de sincronizarse.</p>
+    </div>
+    <p id="file-fallback" hidden>En este navegador podés usar una copia portable. Guardala en tu nube e importala desde otro dispositivo.</p>
+    <div class="backup-actions portable">
+      <button type="button" class="secondary" id="export-backup">Descargar copia</button>
+      <button type="button" class="secondary" id="import-backup">Importar copia</button>
+      <input id="backup-input" type="file" accept="application/json,.json" hidden>
+    </div>
+    <p id="backup-status" role="status" aria-live="polite"></p>
+  </dialog>
+</body>
+</html>
