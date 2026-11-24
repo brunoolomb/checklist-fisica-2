@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Checklist de preparación para el segundo parcial de Física 1.">
   <title>Física 1 | Checklist del segundo parcial</title>
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./plan.js" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=20261124">
+  <script src="./plan.js?v=20261124" defer></script>
   <script src="./progress.js" defer></script>
-  <script src="./app.js" defer></script>
+  <script src="./app.js?v=20261124" defer></script>
 </head>
 <body>
   <a class="skip" href="#plan">Ir a los ejercicios</a>
@@ -34,19 +34,24 @@
           <div class="plan-heading">
             <h2 id="plan-title">Plan de práctica</h2>
             <div class="filters" role="group" aria-label="Filtrar ejercicios">
-              <button type="button" data-filter="all" aria-pressed="true">Todos</button>
+              <button type="button" data-filter="exam" aria-pressed="true">Para el parcial</button>
               <button type="button" data-filter="pending" aria-pressed="false">Por hacer</button>
+              <button type="button" data-filter="all" aria-pressed="false">Todos</button>
             </div>
           </div>
+          <label class="search-label">
+            <span>Buscar en la lista</span>
+            <input id="exercise-search" type="search" placeholder="Ej. Rep. 3, rulo o torque">
+          </label>
           <div id="exercises"></div>
-          <p id="empty" class="empty" hidden>Terminaste el plan principal. El repaso de proyecciones queda disponible en Todos.</p>
+          <p id="empty" class="empty" hidden></p>
         </section>
       </div>
       <aside class="sidebar" aria-label="Progreso y método de estudio">
         <section class="panel progress-panel" aria-labelledby="progress-title">
           <p class="eyebrow">Tu progreso</p>
           <h2 id="progress-title"><span id="progress-count">0</span><span class="progress-total"> / <span id="progress-total">0</span></span></h2>
-          <p class="small">incisos rehechos sin ayuda</p>
+          <p class="small">incisos de la ruta del parcial rehechos sin ayuda</p>
           <progress id="progress-meter" aria-label="Incisos rehechos sin ayuda" max="1" value="0"></progress>
           <p id="save-status" class="save-status" role="status">Guardado en este navegador</p>
         </section>

@@ -16,7 +16,7 @@
 body { margin: 0; color: var(--ink); background: var(--canvas); }
 [hidden] { display: none !important; }
 a { color: inherit; }
-button, select, textarea { font: inherit; color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; }
 button:disabled { cursor: wait; opacity: .65; }
 :focus-visible { outline: 3px solid #56795d; outline-offset: 3px; }
@@ -56,11 +56,13 @@ progress::-moz-progress-bar { background: var(--accent); }
 .method-panel h2 { line-height: 1.25; font-size: 1.1rem; }
 .method-panel ol { margin: 10px 0 0; padding-left: 21px; color: var(--muted); font-size: .92rem; }
 .method-panel li + li { margin-top: 7px; }
-.plan-heading { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 32px 0 14px; }
+.plan-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin: 32px 0 14px; }
 .plan-heading h2 { font: 400 clamp(1.5rem, 3vw, 2rem) var(--serif); letter-spacing: -.03em; }
 .filters { display: flex; gap: 2px; background: #efefe8; border: 1px solid var(--stroke); border-radius: 7px; padding: 2px; }
 .filters button { font-size: .83rem; padding: 4px 8px; white-space: nowrap; }
 .filters button[aria-pressed="true"] { background: var(--paper); border-color: var(--stroke); }
+.search-label { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 17px; color: var(--muted); font-size: .84rem; }
+.search-label input { flex: 1 1 12rem; min-width: 0; border: 1px solid #b9bdb2; border-radius: 5px; padding: 5px 9px; background: var(--paper); color: var(--ink); }
 .phase { margin-bottom: 26px; }
 .phase h3 { font-size: 1rem; }
 .phase > p { margin: 1px 0 9px; }

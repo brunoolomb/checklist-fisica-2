@@ -1,381 +1,145 @@
 window.physicsChecklist = [
-  [
-    "lunes",
-    "r3-24",
-    "Rep. 3 · Ej. 24",
-    "p. 7",
-    "Resorte y rulo",
-    30,
-    "Energía y contacto",
-    "Dibujá el peso y la normal, elegí positivo hacia el centro y escribí Newton radial. Sacá v² con energía desde el resorte.",
-    [
-      [
-        "a",
-        "Normal en función del ángulo"
-      ],
-      [
-        "b",
-        "Ángulo de despegue"
-      ]
-    ],
-    "Al despegarse N = 0. El ángulo del repartido se mide desde la vertical hacia abajo."
-  ],
-  [
-    "lunes",
-    "p2-1a",
-    "Parcialito 23/11 · P1",
-    "p. 1",
-    "Compresión mínima hasta B",
-    12,
-    "Energía y contacto",
-    "Dibujá el radio que va a B. Escribí Newton radial en B con N = 0 y usá esa rapidez en el balance de energía.",
-    [
-      [
-        "a",
-        "Compresión para desprenderse justo en B"
-      ]
-    ],
-    "Los 30° se miden desde la horizontal. La altura de B se mide desde el fondo del rulo."
-  ],
-  [
-    "lunes",
-    "r4-20",
-    "Rep. 4 · Ej. 20",
-    "p. 6",
-    "Retroceso y velocidad relativa",
-    25,
-    "Momento lineal",
-    "Llamá V_f a la velocidad final del cañón respecto al suelo. Escribí la velocidad de la bala en ese mismo marco antes de hacer el balance horizontal.",
-    [
-      [
-        "a",
-        "Velocidad final del cañón"
-      ],
-      [
-        "b",
-        "Velocidad de la bala respecto al suelo"
-      ]
-    ],
-    "El dato del disparo es relativo al cañón. En el balance entran las velocidades medidas desde el suelo."
-  ],
-  [
-    "lunes",
-    "p2-2",
-    "Parcialito 23/11 · P2",
-    "p. 1",
-    "Lanzamiento y captura en patineta",
-    18,
-    "Momento lineal",
-    "Separá lanzamiento, vuelo y captura. Escribí p_x antes y después del lanzamiento para A + pelota.",
-    [
-      [
-        "a",
-        "Velocidad de retroceso de A"
-      ],
-      [
-        "b",
-        "Velocidad de B luego de la captura"
-      ]
-    ],
-    "En vuelo, v_x se mantiene. En la captura cambia el sistema a B + pelota y ambos quedan con la misma velocidad horizontal."
-  ],
-  [
-    "lunes",
-    "r5-19",
-    "Rep. 5 · Ej. 19",
-    "p. 4",
-    "Varilla que cae desde la horizontal",
-    20,
-    "Rígido con eje fijo",
-    "Marcá la distancia b del pivote al CM. Hallá I respecto al pivote con Steiner y seguí la caída del CM.",
-    [
-      [
-        "a",
-        "Velocidad angular en la posición inferior"
-      ]
-    ],
-    "Toda la cinética puede escribirse como ½ I_pivote ω². Para la energía gravitatoria seguí la altura del CM."
-  ],
-  [
-    "lunes",
-    "p2-3ab",
-    "Parcialito 23/11 · P3",
-    "p. 1",
-    "Energía y torque de la varilla",
-    25,
-    "Rígido con eje fijo",
-    "Dibujá O y el CM. Calculá la distancia entre ellos y armá el momento de inercia alrededor de O.",
-    [
-      [
-        "a",
-        "ω en función del ángulo"
-      ],
-      [
-        "b",
-        "α en función del ángulo"
-      ]
-    ],
-    "El pivote está a L/4 del CM. Energía para ω y torque del peso respecto a O para α."
-  ],
-  [
-    "martes",
-    "r1-19",
-    "Rep. 1 · Ej. 19",
-    "p. 5",
-    "Altura máxima de un proyectil",
-    12,
-    "Cinemática",
-    "Separá v inicial horizontal y vertical. En el punto más alto poné v_y = 0.",
-    [
-      [
-        "a",
-        "Alcance y altura máxima"
-      ]
-    ],
-    "En el punto más alto sigue habiendo velocidad horizontal. La altura se calcula desde el lanzamiento."
-  ],
-  [
-    "martes",
-    "p2-1b",
-    "Parcialito 23/11 · P1",
-    "p. 1",
-    "Vuelo tras el despegue",
-    12,
-    "Cinemática",
-    "Dibujá la tangente a la pista en B y proyectá la rapidez que hallaste en el inciso a.",
-    [
-      [
-        "b",
-        "Altura máxima luego de salir del rulo"
-      ]
-    ],
-    "Sumá la altura de B a la ganancia de altura durante el vuelo."
-  ],
-  [
-    "martes",
-    "r2-30",
-    "Rep. 2 · Ej. 30",
-    "p. 8",
-    "Aceleración tangencial en el aro",
-    12,
-    "Dinámica circular",
-    "Dibujá el peso y proyectalo sobre la tangente. Aplicá ΣF_t = mRα.",
-    [
-      [
-        "único",
-        "Aceleración angular cerca del equilibrio"
-      ]
-    ],
-    "Definí el sentido positivo angular antes de proyectar el peso."
-  ],
-  [
-    "martes",
-    "p2-3c",
-    "Parcialito 23/11 · P3",
-    "p. 1",
-    "Reacción del pivote",
-    15,
-    "Rígido con eje fijo",
-    "Dibujá la reacción del eje sobre la varilla en dos componentes. Aplicá ΣF = M a_CM.",
-    [
-      [
-        "c",
-        "Fuerza que se ejerce sobre O"
-      ]
-    ],
-    "Usá aceleración radial y tangencial del CM. Para la fuerza sobre el eje, invertí la reacción del eje sobre la varilla."
-  ],
-  [
-    "martes",
-    "simulacro",
-    "Parcialito 23/11",
-    "pp. 1–2",
-    "Simulacro sin apuntes",
-    60,
-    "Los tres problemas",
-    "Usá solo el formulario. Escribí sistema, etapa y por qué vale cada ecuación. Después corregí el primer error de cada problema.",
-    [
-      [
-        "P1a",
-        "Compresión del resorte"
-      ],
-      [
-        "P1b",
-        "Altura tras el despegue"
-      ],
-      [
-        "P2a",
-        "Retroceso de A"
-      ],
-      [
-        "P2b",
-        "Velocidad de B"
-      ],
-      [
-        "P3a",
-        "Velocidad angular"
-      ],
-      [
-        "P3b",
-        "Aceleración angular"
-      ],
-      [
-        "P3c",
-        "Fuerza sobre O"
-      ]
-    ],
-    "Durante el intento dejá la pista cerrada. Reservá 15 minutos aparte para corregir."
-  ],
-  [
-    "variantes",
-    "r5-26",
-    "Rep. 5 · Ej. 26",
-    "p. 5",
-    "Rodadura con bloque colgante",
-    25,
-    "Rodadura",
-    "Dibujá ambos cuerpos por separado. Escribí Newton en la rampa y para el bloque, y torque alrededor del CM del disco.",
-    [
-      [
-        "a",
-        "Aceleración del CM"
-      ],
-      [
-        "b",
-        "Módulo y sentido del rozamiento"
-      ],
-      [
-        "c",
-        "Coeficiente estático mínimo"
-      ]
-    ],
-    "La cuerda se conecta al centro. Hallá la fricción con las ecuaciones y después imponé |f_s| ≤ μ_s N."
-  ],
-  [
-    "variantes",
-    "r4-14",
-    "Rep. 4 · Ej. 14",
-    "p. 4",
-    "Choque elástico frontal",
-    18,
-    "Momento lineal",
-    "Elegí derecha positiva y escribí p inicial y final. El segundo bloque parte del reposo.",
-    [
-      [
-        "a",
-        "Velocidades finales y los tres casos de masas"
-      ]
-    ],
-    "En choque elástico agregá conservación de K. El signo de la velocidad final del primer bloque indica si rebota."
-  ],
-  [
-    "variantes",
-    "r3-23",
-    "Rep. 3 · Ej. 23",
-    "p. 7",
-    "Completar el rulo o perder contacto",
-    22,
-    "Energía y contacto",
-    "Para el mínimo, buscá el caso límite en la cima. Para el ángulo de salida, combiná N = 0 con energía en un ángulo genérico.",
-    [
-      [
-        "b",
-        "Altura inicial mínima"
-      ],
-      [
-        "c",
-        "Ángulo de salida y trayectoria posterior"
-      ]
-    ],
-    "La rapidez crítica arriba es √(gR). Tras el despegue, el bloque sigue un proyectil."
-  ],
-  [
-    "variantes",
-    "r4-24",
-    "Rep. 4 · Ej. 24",
-    "p. 7",
-    "Explosión en dos dimensiones",
-    15,
-    "Momento lineal",
-    "Alineá los ejes con las dos velocidades conocidas y conservá p_x y p_y.",
-    [
-      [
-        "único",
-        "Módulo y dirección del tercer fragmento"
-      ]
-    ],
-    "El momento inicial es cero. Hallá las componentes del fragmento antes del módulo y el ángulo."
-  ],
-  [
-    "variantes",
-    "r5-31",
-    "Rep. 5 · Ej. 31",
-    "pp. 6–7",
-    "Cilindro que rueda con resorte",
-    22,
-    "Rodadura y energía",
-    "Escribí la energía en la elongación inicial y en una posición x. Relacioná v_CM con ω por rodadura.",
-    [
-      [
-        "a",
-        "Rapidez del centro de masa en función de x"
-      ]
-    ],
-    "Incluí cinética de traslación y rotación. Tomá la deformación desde la longitud natural."
-  ],
-  [
-    "variantes",
-    "r5-36",
-    "Rep. 5 · Ej. 36",
-    "p. 8",
-    "Dos ruedas que se acoplan",
-    15,
-    "Momento angular",
-    "Elegí el eje de las dos ruedas y compará su momento angular antes y después del acople.",
-    [
-      [
-        "a",
-        "Velocidad angular final"
-      ],
-      [
-        "b",
-        "Fracción de energía perdida"
-      ]
-    ],
-    "Las dos ruedas terminan con la misma ω. Calculá la energía cinética inicial y final por separado."
-  ],
-  [
-    "variantes",
-    "r5-12",
-    "Rep. 5 · Ej. 12",
-    "p. 2",
-    "Escalera en equilibrio",
-    18,
-    "Estática",
-    "Dibujá los apoyos y elegí tomar torques respecto al punto de apoyo en el piso.",
-    [
-      [
-        "único",
-        "Coeficiente mínimo de rozamiento"
-      ]
-    ],
-    "En el límite de deslizamiento |f_s| = μ_s N. La pared lisa aporta solo una normal."
-  ],
-  [
-    "apoyo",
-    "r0-7",
-    "Rep. 0 · Ej. 7",
-    "p. 3",
-    "Proyecciones para destrabarte",
-    8,
-    "Trigonometría",
-    "Con el triángulo del dibujo, identificá qué cateto queda junto al ángulo y cuál queda enfrente.",
-    [
-      [
-        "único",
-        "Ángulos y componentes del vector"
-      ]
-    ],
-    "Usalo si te frenan las proyecciones. Después volvé al ejercicio principal."
-  ]
+  ["lunes","r3-24","Rep. 3 · Ej. 24","p. 7","Resorte y rulo",32,"Energía y contacto","Dibujá el peso y la normal, elegí positivo hacia el centro y escribí Newton radial. Sacá v² con energía desde el resorte.",[["a","Normal en función del ángulo"],["b","Ángulo de despegue"],["c","Compresión mínima para completar el rulo"]],"Al despegarse N = 0. Para completar el giro, examiná el caso límite arriba. θ se mide desde la vertical hacia abajo."],
+  ["lunes","r3-4","Rep. 3 · Ej. 4","pp. 1–2","Rampa con rozamiento",12,"Trabajo y potencia","Elegí un eje cuesta abajo y calculá cuánto trabajo aportan el peso y el rozamiento al recorrer x.",[["a","Rapidez en función de la distancia"],["b","Potencia del rozamiento"]],"La normal es mg cos θ. Para potencia usá fuerza por rapidez con el signo del trabajo."],
+  ["lunes","p2-1a","Parcialito 23/11 · P1","p. 1","Compresión mínima hasta B",12,"Energía y contacto","Dibujá el radio que va a B. Escribí Newton radial en B con N = 0 y usá esa rapidez en el balance de energía.",[["a","Compresión para desprenderse justo en B"]],"Los 30° se miden desde la horizontal. La altura de B se mide desde el fondo del rulo."],
+  ["lunes","r4-20","Rep. 4 · Ej. 20","p. 6","Retroceso y velocidad relativa",25,"Momento lineal","Llamá V_f a la velocidad final del cañón respecto al suelo. Escribí la velocidad de la bala en ese mismo marco antes de hacer el balance horizontal.",[["a","Velocidad final del cañón"],["b","Velocidad de la bala respecto al suelo"]],"El dato del disparo es relativo al cañón. En el balance entran las velocidades medidas desde el suelo."],
+  ["lunes","p2-2","Parcialito 23/11 · P2","p. 1","Lanzamiento y captura en patineta",18,"Momento lineal","Separá lanzamiento, vuelo y captura. Escribí p_x antes y después del lanzamiento para A + pelota.",[["a","Velocidad de retroceso de A"],["b","Velocidad de B luego de la captura"]],"En vuelo, v_x se mantiene. En la captura cambia el sistema a B + pelota y ambos quedan con la misma velocidad horizontal."],
+  ["lunes","r5-19","Rep. 5 · Ej. 19","p. 4","Varilla que cae desde la horizontal",20,"Rígido con eje fijo","Marcá la distancia b del pivote al CM. Hallá I respecto al pivote con Steiner y seguí la caída del CM.",[["a","Velocidad angular en la posición inferior"]],"Toda la cinética puede escribirse como ½ I_pivote ω². Para la energía gravitatoria seguí la altura del CM."],
+  ["lunes","p2-3ab","Parcialito 23/11 · P3","p. 1","Energía y torque de la varilla",25,"Rígido con eje fijo","Dibujá O y el CM. Calculá la distancia entre ellos y armá el momento de inercia alrededor de O.",[["a","ω en función del ángulo"],["b","α en función del ángulo"]],"El pivote está a L/4 del CM. Energía para ω y torque del peso respecto a O para α."],
+  ["martes","r1-19","Rep. 1 · Ej. 19","p. 5","Altura máxima de un proyectil",12,"Cinemática","Separá v inicial horizontal y vertical. En el punto más alto poné v_y = 0.",[["a","Alcance y altura máxima"]],"En el punto más alto sigue habiendo velocidad horizontal. La altura se calcula desde el lanzamiento."],
+  ["martes","p2-1b","Parcialito 23/11 · P1","p. 1","Vuelo tras el despegue",12,"Cinemática","Dibujá la tangente a la pista en B y proyectá la rapidez que hallaste en el inciso a.",[["b","Altura máxima luego de salir del rulo"]],"Sumá la altura de B a la ganancia de altura durante el vuelo."],
+  ["martes","r2-30","Rep. 2 · Ej. 30","p. 8","Aceleración tangencial en el aro",12,"Dinámica circular","Dibujá el peso y proyectalo sobre la tangente. Aplicá ΣF_t = mRα.",[["único","Aceleración angular cerca del equilibrio"]],"Definí el sentido positivo angular antes de proyectar el peso."],
+  ["martes","p2-3c","Parcialito 23/11 · P3","p. 1","Reacción del pivote",15,"Rígido con eje fijo","Dibujá la reacción del eje sobre la varilla en dos componentes. Aplicá ΣF = M a_CM.",[["c","Fuerza que se ejerce sobre O"]],"Usá aceleración radial y tangencial del CM. Para la fuerza sobre el eje, invertí la reacción del eje sobre la varilla."],
+  ["martes","simulacro","Parcialito 23/11","pp. 1–2","Simulacro sin apuntes",60,"Los tres problemas","Usá solo el formulario. Escribí sistema, etapa y por qué vale cada ecuación. Después corregí el primer error de cada problema.",[["P1a","Compresión del resorte"],["P1b","Altura tras el despegue"],["P2a","Retroceso de A"],["P2b","Velocidad de B"],["P3a","Velocidad angular"],["P3b","Aceleración angular"],["P3c","Fuerza sobre O"]],"Durante el intento dejá la pista cerrada. Reservá 15 minutos aparte para corregir."],
+  ["variantes","r3-13","Rep. 3 · Ej. 13","p. 4","Rampa rugosa, pista lisa y vuelo",25,"Energía por tramos","Separá A→D y D→F. Calculá la rapidez en D por energía antes de empezar las ecuaciones del proyectil.",[["a","Alcance desde D′"],["b","Altura máxima sin fricción"],["c","Explicar la altura aun si la energía se conserva"]],"Solo hay pérdida en AB. En el punto más alto sigue habiendo velocidad horizontal."],
+  ["variantes","r5-8","Rep. 5 · Ej. 8","p. 2","Velocidad de cada punto de un disco",15,"Cinemática de rodadura","Para cada punto, sumá la velocidad del CM y la que tiene por girar alrededor del CM.",[["a","Vectores velocidad en A, B, C y D"]],"La rotación duplica la rapidez arriba y la anula en el contacto con el suelo."],
+  ["variantes","r5-25","Rep. 5 · Ej. 25","p. 5","El hilo tira por arriba del cilindro",22,"Rodadura y cuerda","Dibujá el punto donde el hilo deja el cilindro. Vinculá su rapidez con la del bloque antes de usar Newton y torque.",[["a","Aceleración del bloque"],["b","Rozamiento con el suelo"],["c","Balance de energía y segunda vía"]],"El hilo lleva la rapidez del punto superior, que es el doble de la rapidez del CM."],
+  ["variantes","r5-26","Rep. 5 · Ej. 26","p. 5","Rodadura con bloque colgante",25,"Rodadura","Dibujá ambos cuerpos por separado. Escribí Newton en la rampa y para el bloque, y torque alrededor del CM del disco.",[["a","Aceleración del CM"],["b","Módulo y sentido del rozamiento"],["c","Coeficiente estático mínimo"],["d","Justificar conservación de energía"]],"La cuerda se conecta al centro. Hallá la fricción con las ecuaciones y después imponé |f_s| ≤ μ_s N."],
+  ["variantes","r4-19","Rep. 4 · Ej. 19","pp. 5–6","Choque inelástico y subida",15,"Momento lineal y energía","Trazá tres estados, antes del choque, inmediatamente después y altura máxima.",[["a","Justificar qué se conserva y en qué etapa"],["b","Rapidez incidente a partir de la altura"]],"Usá pₓ en el choque y energía durante la subida."],
+  ["variantes","r4-14","Rep. 4 · Ej. 14","p. 4","Choque elástico frontal",18,"Momento lineal","Elegí derecha positiva y escribí p inicial y final. El segundo bloque parte del reposo.",[["a","Velocidades finales y los tres casos de masas"],["b","Casos límite de masas"],["c","Cuándo sirve la conservación aproximada durante un choque"]],"En choque elástico agregá conservación de K. El signo de la velocidad final del primer bloque indica si rebota."],
+  ["variantes","old23-2","Segundo parcial · Dic. 2023 · P2","p. 1","Resorte, choque elástico, rozamiento y rulo",27,"Energía y momento por etapas","Armá una línea de estados. Desde el mínimo en la cima, retrocedé por la rampa y el choque para hallar la compresión.",[["único","Compresión inicial mínima"]],"En el choque usá P y K. En cada tramo anterior o posterior, escribí el balance de energía del cuerpo que está moviéndose."],
+  ["variantes","old24-1","Segundo parcial · Dic. 2024 · P1","p. 1","Resorte, rampa rugosa y salida por el exterior",25,"Transferencia de energía y contacto","Separá el tramo rugoso y luego dibujá el eje radial en el borde curvo. Determiná el ángulo con energía y N=0.",[["único","Ángulo de despegue"]],"En el exterior la normal apunta hacia afuera del arco. El signo radial cambia respecto al rulo interior."],
+  ["variantes","r3-23","Rep. 3 · Ej. 23","p. 7","Completar el rulo o perder contacto",23,"Energía y contacto","Para el mínimo, buscá el caso límite en la cima. Para el ángulo de salida, combiná N = 0 con energía en un ángulo genérico.",[["a","Normal en función del ángulo"],["b","Altura inicial mínima"],["c","Ángulo de salida y trayectoria posterior"]],"La rapidez crítica arriba es √(gR). Tras el despegue, el bloque sigue un proyectil."],
+  ["variantes","r4-24","Rep. 4 · Ej. 24","p. 7","Explosión en dos dimensiones",15,"Momento lineal","Alineá los ejes con las dos velocidades conocidas y conservá p_x y p_y.",[["único","Módulo y dirección del tercer fragmento"]],"El momento inicial es cero. Hallá las componentes del fragmento antes del módulo y el ángulo."],
+  ["variantes","r5-31","Rep. 5 · Ej. 31","pp. 6–7","Cilindro que rueda con resorte",22,"Rodadura y energía","Escribí la energía en la elongación inicial y en una posición x. Relacioná v_CM con ω por rodadura.",[["a","Rapidez del centro de masa en función de x"],["b","Aceleración angular según el ángulo a partir de energía"]],"Incluí cinética de traslación y rotación. Tomá la deformación desde la longitud natural."],
+  ["variantes","old25-2","Segundo parcial · Dic. 2025 · P2","p. 1","Cilindro en rampa con un resorte unido al hilo",25,"Rodadura y elongación del resorte","Sobre la pendiente, escribí el desplazamiento del CM y el avance del hilo, que sale por arriba, en función del giro.",[["a","Vínculo de posiciones"],["b","Rapidez angular según el giro"],["c","Elongación máxima"]],"Usá el avance del hilo para la elongación. En el punto de retorno, la rapidez angular vale cero."],
+  ["variantes","old25-1","Segundo parcial · Dic. 2025 · P1","p. 1","Fricción que actúa sobre un arco horizontal",23,"Trabajo en movimiento circular","Primero sacá la rapidez al entrar al arco. En el arco usá la longitud Rθ para el trabajo y proyectá la fuerza neta sobre la tangente.",[["a","Rapidez según el ángulo"],["b","Aceleración angular"],["c","Ángulo de detención"]],"En la mesa horizontal N=mg. El radio y el ángulo en radianes dan la distancia recorrida en el arco."],
+  ["variantes","r3-6","Rep. 3 · Ej. 6","p. 2","Fuerza que cambia de dirección",15,"Trabajo variable y potencia","Integrá la componente horizontal de F en función de x. Después calculá la potencia en el punto pedido.",[["a","Rapidez en función de x"],["b","Potencia y valor en x=d"]],"Aunque el módulo de F sea constante, su componente sobre el desplazamiento varía."],
+  ["variantes","r3-14","Rep. 3 · Ej. 14","p. 4","Rapidez máxima al comprimir un resorte",15,"Equilibrio instantáneo y energía","Después del primer contacto, escribí Newton en función de la compresión. Buscá dónde cambia de signo la aceleración.",[["único","Altura donde v es máxima y valor de v máxima"]],"En el máximo de rapidez del tramo, kΔℓ=mg. La compresión máxima se alcanza más tarde, cuando v=0."],
+  ["variantes","r5-27","Rep. 5 · Ej. 27","p. 5","Carrete con surco y tracción oblicua",25,"Rodadura con dos radios","Marcá el radio R hasta el piso y r hasta el hilo. Tomá el torque de la tensión con su brazo perpendicular.",[["a","Fricción"],["b","Aceleración del CM"],["c","Ángulo para cambiar el sentido"]],"Con la tangencia inferior de la figura, el límite de cambio de sentido satisface cos θ=r/R."],
+  ["variantes","r3-9","Rep. 3 · Ej. 9","p. 3","Trabajo y resorte sobre un arco",15,"Integrar a lo largo de la trayectoria","Identificá la posición natural del resorte y escribí su elongación como longitud de arco.",[["único","Trabajo por energía e integración directa"]],"Usá θ en radianes y ds=R dθ. La rapidez indicada es constante."],
+  ["variantes","r3-10","Rep. 3 · Ej. 10","p. 3","Alcanzar la cima con una varilla rígida",10,"Vínculo bilateral","Medí el aumento de altura desde la horizontal hasta la cima. Pensá qué fuerzas puede ejercer una varilla rígida.",[["único","Rapidez inicial mínima"]],"Una varilla puede empujar y tirar. En el límite de alcance, la rapidez arriba tiende a cero."],
+  ["variantes","r3-20","Rep. 3 · Ej. 20","p. 6, versión Energía","Dos masas, cuerda y resorte desde equilibrio",22,"Energía con una coordenada común","Elegí la altura de m como coordenada. Si m sube una distancia, M baja esa distancia medida a lo largo de la rampa.",[["a","Altura de equilibrio desde el suelo"],["b","Rapidez al volver al equilibrio"]],"El desplazamiento sobre la rampa y el cambio de altura de M difieren por un factor sin θ."],
+  ["variantes","r5-36","Rep. 5 · Ej. 36","p. 8","Dos ruedas que se acoplan",15,"Momento angular","Elegí el eje de las dos ruedas y compará su momento angular antes y después del acople.",[["a","Velocidad angular final"],["b","Fracción de energía perdida"]],"Las dos ruedas terminan con la misma ω. Calculá la energía cinética inicial y final por separado."],
+  ["variantes","r5-12","Rep. 5 · Ej. 12","p. 2","Escalera en equilibrio",18,"Estática","Dibujá los apoyos y elegí tomar torques respecto al punto de apoyo en el piso.",[["único","Coeficiente mínimo de rozamiento"]],"En el límite de deslizamiento |f_s| = μ_s N. La pared lisa aporta solo una normal."],
+  ["variantes","r5-29","Rep. 5 · Ej. 29","p. 6","Del deslizamiento a la rodadura pura",20,"Cambio de régimen de rozamiento","Hallá la dirección de la rapidez del punto de contacto al principio. Esa dirección fija hacia dónde actúa el rozamiento cinético.",[["a","Newton y torque mientras patina"],["b","Tiempo hasta la rodadura pura"],["c","Rapidez al iniciar la rodadura pura"],["d","Rozamiento luego de la transición"]],"Imponé v_CM=Rω recién cuando el punto de contacto queda instantáneamente quieto."],
+  ["variantes","r5-10","Rep. 5 · Ej. 10","p. 2","Disco con un hueco",20,"Centro de masa e inercia compuestos","Tratá el hueco como una contribución que se resta. Hallá el CM del disco restante antes de mover el eje otra vez.",[["a","Centro de masa"],["b","Inercia en O"],["c","Inercia en el CM"],["d","Inercia en A"],["e","Inercia en B"]],"Para restar inercias, calculá ambas alrededor del mismo eje."],
+  ["variantes","r5-42","Rep. 5 · Ej. 42","p. 9","Choque y rotación alrededor de un pivote",25,"Impulso angular y torque","Tomá momentos respecto del pivote durante el choque. Después tratá el conjunto como un péndulo físico.",[["a","Momento lineal y apoyo"],["b","Conservación angular y eje"],["c","Pérdida de energía"],["d","Ecuación angular posterior"]],"El pivote ejerce impulso pero su brazo respecto de sí mismo es cero."],
+  ["variantes","old25-3","Segundo parcial · Dic. 2025 · P3","p. 2","Varilla cuando se retira el eje",15,"Traslación y giro libre","Justo antes de retirar el eje, calculá la velocidad del CM y el giro de la varilla. Evaluá si aparece impulso al liberar el eje ideal.",[["a","Velocidad del CM libre"],["b","Velocidad angular libre"]],"Usá el instante previo a retirar el eje. Sin impulso externo, las velocidades son continuas al liberarla."],
+  ["variantes","r4-9","Rep. 4 · Ej. 9","p. 2","Cuña móvil y bloque que baja",25,"Energía y momento lineal a la vez","Escribí la velocidad del bloque respecto de la mesa como suma de su velocidad sobre la cuña y la de la cuña.",[["a","Energía del conjunto"],["b","Momento horizontal"],["c","Vínculo de velocidades"],["d","Velocidad final de la cuña"]],"Conservá pₓ y E para el conjunto. La rapidez que entra en E es respecto al suelo."],
+  ["variantes","r5-37","Rep. 5 · Ej. 37","p. 8","Impacto excéntrico sobre un disco libre",22,"Momento lineal y angular sobre CM","Calculá dónde queda el CM del conjunto. Usalo para medir los brazos y separar traslación de giro.",[["único","Velocidad angular tras empotrarse"]],"El centro geométrico del disco y el CM del conjunto tienen posiciones distintas."],
+  ["ampliacion","r3-1","Rep. 3 · Ej. 1","p. 1","Trabajo de una fuerza que cambia de módulo",12,"Integral y área con signo","Dibujá las componentes de las fuerzas sobre la rampa. Integrá cada una a lo largo de la distancia recorrida.",[["a","Trabajo del peso"],["b","Trabajo de la normal"],["c","Trabajo de F"],["d","Trabajo neto"],["e","Curvas y significado de sus áreas"]],"La componente de la normal a lo largo de la rampa vale cero."],
+  ["ampliacion","r3-3","Rep. 3 · Ej. 3","p. 1","Rebote con pérdida de energía",12,"Energía antes, durante y después","Separá caída, rebote y subida. Escribí una relación entre las energías cinéticas justo antes y después del rebote.",[["único","Rapidez de salida y razón de energías"]],"La pérdida del 15% ocurre durante el rebote. Chequeá el orden del cociente que pide el enunciado."],
+  ["ampliacion","r3-7","Rep. 3 · Ej. 7","p. 2","Esferas que empiezan a tocar una pared girando",18,"Contacto circular y potencia","Planteá el contacto límite con N=0. Para el giro más rápido, sumá la normal en Newton radial.",[["a","Velocidad angular de primer contacto"],["b","Potencia total que se disipa"]],"Para la potencia, contá las dos esferas y usá la rapidez tangencial contra la pared."],
+  ["ampliacion","r3-8","Rep. 3 · Ej. 8","p. 3","Trabajo variable antes de salir hacia una rampa",16,"Energía y encuentro geométrico","Integrá la fuerza en el tramo horizontal. Después escribí la trayectoria del bloque y la ecuación de la pendiente.",[["a","Rapidez al final de la mesa"],["b","Distancia que mide sobre la rampa"]],"Al pasar a vuelo cambiás de ecuaciones. La distancia medida por la rampa se obtiene a partir de la proyección horizontal."],
+  ["ampliacion","r3-15","Rep. 3 · Ej. 15","p. 5","Resorte vertical medido desde el equilibrio",18,"Potencial efectivo y movimiento","Encontrá primero la compresión de equilibrio y escribí la deformación total para una posición desplazada.",[["a","Constante elástica"],["b","Potencial total inicial"],["c","Altura máxima sobre el equilibrio"],["d","Ecuación de movimiento"]],"Al tomar el origen en equilibrio, los términos lineales de gravedad y resorte se cancelan."],
+  ["ampliacion","r3-17","Rep. 3 · Ej. 17","p. 5","Deducir aceleración angular de energía",15,"Energía y derivada temporal","Escribí la altura de la masa desde el pivote y expresá v con la rapidez angular.",[["a","Energía según θ"],["b","Rapidez según θ"],["c","Aceleración angular"]],"Al derivar respecto del tiempo aparece dθ/dt. En el instante de retorno podés comprobar α con Newton tangencial."],
+  ["ampliacion","r3-18","Rep. 3 · Ej. 18","p. 6","Pérdida de energía en sucesivas idas y vueltas",12,"Trabajo repetido","Calculá el trabajo que disipa un cruce completo. Dividí la energía inicial por ese costo y conservá el resto.",[["único","Cruces completos y lugar de detención"]],"La paridad de los cruces indica desde qué lado medís el último desplazamiento."],
+  ["ampliacion","r3-19","Rep. 3 · Ej. 19","p. 6","Energía de dos bloques con rozamiento",14,"Sistema con cuerda ideal","Elegí bloque, masa colgante y cuerda como sistema. Relacioná los dos desplazamientos antes de escribir K y U.",[["único","Rapidez en función de x"]],"Hay dos términos de energía cinética. La tensión es interna para el sistema elegido."],
+  ["ampliacion","r3-20b","Rep. 3 · Ej. 20","p. 7, versión de 8 páginas","Dos masas desde resorte natural",15,"Cambio de condiciones iniciales","Tomá y desde la posición inicial, con el resorte natural. Escribí el cambio de las dos alturas y la elongación.",[["único","Rapidez para cualquier altura alcanzable"]],"En esta versión se suelta desde longitud natural. Revisá dónde vuelve a valer v=0."],
+  ["ampliacion","r3-21","Rep. 3 · Ej. 21","p. 6","Resorte sobre guía circular y puntos alcanzables",15,"Dominio físico del movimiento","Tomá la vertical de la figura como referencia y relacioná el ángulo con la deformación del resorte que sigue el arco.",[["único","Rapidez y ángulos posibles"]],"El radicando de v debe ser no negativo y el punto debe pertenecer a la guía."],
+  ["ampliacion","r3-22","Rep. 3 · Ej. 22","p. 7","Péndulo cuyo radio cambia al pasar un clavo",15,"Cambio de centro, energía y tensión","Marcá el fondo común y las dos circunferencias. Usá el radio pequeño en Newton en la cima.",[["a","Rapidez en la cima"],["b","Distancia mínima al clavo"]],"La energía vincula alturas. El nuevo radio entra en la condición límite T=0."],
+  ["ampliacion","r4-4","Rep. 4 · Ej. 4","p. 1","Centro de masa de un semidisco",17,"Simetría e integración","Fijá el origen en el centro del diámetro. Usá simetría para una coordenada e integrá la otra con dA.",[["único","Centro de masa del semidisco"]],"El área es πR²/2. El peso de cada elemento es proporcional a su área."],
+  ["ampliacion","r4-3","Rep. 4 · Ej. 3","p. 1","Centro de masa de una lata hecha de chapa",10,"Descomponer un cuerpo en partes conocidas","Tratá la base y el lateral como piezas. Ubicá el CM de cada una y calculá sus áreas.",[["único","Altura del centro de masa de la lata"]],"Para chapa uniforme, los pesos relativos de las piezas son proporcionales a sus áreas."],
+  ["ampliacion","r4-6","Rep. 4 · Ej. 6","p. 1","Canoa que se mueve al cambiar de asiento",12,"Centro de masa fijo","Escribí cada desplazamiento respecto a tierra como el del bote más el desplazamiento sobre el bote.",[["único","Desplazamiento respecto del muelle"]],"El momento horizontal inicial es cero, así que el CM total conserva su posición horizontal."],
+  ["ampliacion","r4-7","Rep. 4 · Ej. 7","p. 1","Explosión de un proyectil en la cima",15,"Etapas de proyectil e impulso","Hallá la velocidad que lleva justo antes de romperse. Hacé el balance instantáneo y continuá el vuelo de los fragmentos.",[["único","Alcance de la mitad que sigue moviéndose"]],"En el punto más alto v_y=0 para el original. El tiempo de caída depende de la altura y de la velocidad vertical."],
+  ["ampliacion","r4-10","Rep. 4 · Ej. 10","pp. 2–3","Retroceso con límite de separación",16,"Momento y restricción geométrica","Elegí un signo hacia la nave. Tras el impulso, compará cuándo llega el astronauta con cuándo se tensa la cuerda.",[["a","Velocidad de la herramienta"],["b","Longitud mínima de cuerda"],["c","Tiempo hasta la nave"]],"La cuerda limita la separación relativa, que crece a la rapidez de la herramienta respecto del astronauta."],
+  ["ampliacion","r4-11","Rep. 4 · Ej. 11","p. 3","Rozamiento interno entre tabla y bloque",18,"Momento y pérdida de energía por deslizamiento","Elegí tabla + bloque. Hallá la velocidad común por momento y calculá el desplazamiento relativo mientras patina.",[["a","Rapidez común"],["b","Cambio de K"],["c","Distancia recorrida sobre la tabla"]],"La fricción interna disipa energía en proporción al deslizamiento relativo."],
+  ["ampliacion","r4-12","Rep. 4 · Ej. 12","p. 4","Dos choques consecutivos que se resuelven hacia atrás",15,"Reconstrucción de velocidades intermedias","Empezá en el choque cuyo estado final está más determinado. Recuperá la velocidad inmediatamente anterior.",[["a","Rapidez entre choques"],["b","Rapidez inicial"]],"Hacé un balance distinto para cada evento."],
+  ["ampliacion","r4-16","Rep. 4 · Ej. 16","p. 5","Choque contra un bloque en una rampa",16,"Impulso externo y elección de eje","Marcá hacia dónde apunta la normal impulsiva de la rampa y proyectá el momento en un eje perpendicular a ella.",[["a","Dirección de conservación"],["b","Velocidad inmediatamente posterior"],["c","Condición de choque breve"]],"La velocidad incidente es horizontal. Usá su componente paralela a la rampa."],
+  ["ampliacion","r4-17","Rep. 4 · Ej. 17","p. 5","Choque con pérdida de energía prescrita",18,"Resolver momento con una restricción de K","Obtené la rapidez incidente de la caída. Escribí P antes y después y la relación de K que pide cada caso.",[["a","Velocidad de la bola en el choque elástico"],["b","Velocidad del bloque en el choque elástico"],["c","Velocidades con pérdida de la mitad de K"]],"Para escoger la solución física, después del contacto los cuerpos se separan."],
+  ["ampliacion","r4-21","Rep. 4 · Ej. 21","p. 6","Retroceso rápido con resorte anclado",20,"Conservación aproximada por etapas","Separá el impulso breve de la fase en la que el resorte frena el retroceso. Indicá qué sistema usás en cada una.",[["a","En qué etapa se conserva E"],["b","Cuándo se conserva aproximadamente p"],["c","Rapidez de retroceso"],["d","Extensión máxima"],["e","Condición de impulso despreciable"]],"El resorte empieza natural, así que su impulso durante el disparo puede ser despreciable aunque frene después."],
+  ["ampliacion","r4-23","Rep. 4 · Ej. 23","pp. 6–7","Choque en cruz y frenado",17,"Momento vectorial y trabajo","Escribí las componentes de p inicial, sumalas y calculá la rapidez común. Después analizá el frenado como otra etapa.",[["a","Rapidez y dirección final"],["b","Distancia de frenado"]],"Pasá las velocidades iniciales a m/s antes de usar las fuerzas en SI."],
+  ["ampliacion","r4-25","Rep. 4 · Ej. 25","p. 7","Choque oblicuo elástico de masas iguales",20,"Geometría de las velocidades resultantes","Dibujá la línea entre centros al contacto. Usá p y K para relacionar las dos direcciones de salida.",[["a","Ángulo de A"],["b","Ángulo de B"],["c","Rapideces finales"]],"El parámetro de impacto se relaciona con 2R, no con R."],
+  ["ampliacion","r4-28","Rep. 4 · Ej. 28","p. 8","Cuerda cuyo tramo colgante cambia de masa",19,"Sistema continuo y ecuación de movimiento","Tomá toda la cuerda como sistema y usá la longitud colgante como coordenada.",[["a","Aceleración según la longitud colgante"],["b","Centro de masa del tramo vertical según t"]],"El peso que tira varía con y. La masa de la cuerda completa es constante."],
+  ["ampliacion","r4-30","Rep. 4 · Ej. 30","p. 8","Empuje con masa variable",18,"Flujo de masa con velocidad relativa","Escribí la masa restante como función del tiempo y el momento que sale por unidad de tiempo.",[["a","Empuje"],["b","Masa final"],["c","Rapidez final"]],"Para calcular la rapidez final, la aceleración cambia porque cambia la masa."],
+  ["ampliacion","r4-31","Rep. 4 · Ej. 31","p. 9","Un carro deja caer masa sin empuje horizontal",8,"Flujo de masa sin velocidad relativa","Identificá la velocidad horizontal con la que sale la arena, primero respecto al carro y luego respecto al suelo.",[["único","Decidir si cambia la rapidez y justificar"]],"El término de empuje usa la velocidad de salida relativa al carro."],
+  ["ampliacion","r5-5","Rep. 5 · Ej. 5","p. 1","Dos ruedas conectadas por banda",12,"Vínculo de velocidades tangenciales","Igualá las velocidades de los bordes en contacto con la banda.",[["a","Relación entre velocidades angulares"],["b","Tiempo para alcanzar el giro pedido"]],"La banda impone una rapidez tangencial común aunque las ruedas tengan radios distintos."],
+  ["ampliacion","r5-6","Rep. 5 · Ej. 6","p. 1","Velocidad y aceleración de un punto en coordenadas cartesianas",12,"Vectores de rotación","Tomá el eje z como eje fijo. Sumá en la aceleración la parte radial y la parte debida a α.",[["a","Vector velocidad"],["b","Vector aceleración"],["c","Radio de la trayectoria"]],"La aceleración radial apunta hacia el eje aunque la rueda esté frenando."],
+  ["ampliacion","r5-8g","Rep. 5 · Ej. 8b","p. 2","Cicloide y trayectorias sobre el disco",14,"Movimiento de punto material en rodadura","Sumá la traslación horizontal del CM a la rotación de los puntos alrededor de él. Graficá con el giro como parámetro.",[["b","Gráficas de O, A, B, C y D"]],"La coordenada horizontal del CM avanza R por radián de giro."],
+  ["ampliacion","r5-11","Rep. 5 · Ej. 11","p. 2","Barra en equilibrio con dos apoyos",12,"Reacciones y signos de torque","Elegí el extremo izquierdo como origen de torques y colocá el peso propio en el CM.",[["único","Reacción y tipo de esfuerzo en cada apoyo"]],"Un resultado negativo significa que la fuerza tiene el sentido opuesto al elegido."],
+  ["ampliacion","r5-13","Rep. 5 · Ej. 13","p. 3","Bisagra, barra y cuerda con dos tramos",18,"Equilibrio con varias fuerzas de una cuerda","Marcá los dos tramos que tiran del extremo de la barra y el punto de aplicación del peso de la barra.",[["único","Fuerzas de la cuerda y de la bisagra"]],"Tomá torque en la bisagra y después recuperá sus dos componentes por fuerzas."],
+  ["ampliacion","r5-14","Rep. 5 · Ej. 14","p. 3","Condición geométrica para volcar",12,"Centro de masa y borde de apoyo","Dibujá la vertical que baja del CM y el borde de la base del cilindro.",[["único","Posición crítica y años hasta alcanzarla"]],"El vuelco inminente ocurre cuando la vertical del CM pasa por el borde."],
+  ["ampliacion","r5-15","Rep. 5 · Ej. 15","p. 3","Esfera sostenida contra una pared",17,"Fricción y torque con cuerda tangente","Tomá torques alrededor del centro de la esfera. Separá equilibrio vertical y horizontal.",[["a","Tensión"],["b","Coeficiente estático mínimo"]],"La normal de la pared pasa por el centro. La fricción y la cuerda tienen brazos de torque."],
+  ["ampliacion","r5-16","Rep. 5 · Ej. 16","p. 3","Yo-yo que vuelve a la mano",14,"Energía con giro alrededor de un eje enrollado","Calculá la inercia de ambos discos. Vinculá la rapidez del CM con el radio del eje donde se enrolla el hilo.",[["único","Velocidad angular inicial para volver"]],"La inercia depende de R. La relación entre giro y avance del hilo usa r."],
+  ["ampliacion","r5-17","Rep. 5 · Ej. 17","p. 3","Aro, disco y esfera bajando la misma altura",12,"Energía en rodadura","Armá la misma ecuación de energía para los tres y cambiá I para cada forma.",[["único","Comparar las tres rapideces"]],"La forma con mayor I/(MR²) deja menos energía en traslación dada la misma caída."],
+  ["ampliacion","r5-18","Rep. 5 · Ej. 18","p. 3","Rampa rugosa conectada a una polea que gira",16,"Energía con polea masiva","Incluí bloque + polea en el sistema. Proyectá el peso y la normal en los ejes de la rampa.",[["único","Demostrar la rapidez para una distancia dada"]],"La fricción disipa en el bloque y la polea contribuye con energía de giro aunque su CM se quede fijo."],
+  ["ampliacion","r5-19b","Rep. 5 · Ej. 19b","p. 4","Dónde poner el pivote para girar más rápido",12,"Optimización con Steiner","Recuperá ω² en función de la distancia b e identificá su dominio en la barra.",[["b","Distancia que maximiza ω"]],"Al aumentar b crecen tanto la caída del CM como la inercia. Maximizá ω²."],
+  ["ampliacion","r5-20","Rep. 5 · Ej. 20","p. 4","Esfera que rueda y pierde contacto",22,"Rodadura sobre superficie curva","Dibujá por separado la órbita del CM y el giro de la esfera. Calculá la rapidez por energía y luego poné N=0.",[["a","Conservación de energía"],["b","Altura del CM"],["c","Rapidez y vínculo entre giros"],["d","Ángulo donde se despega"]],"El centro de la esfera recorre un arco de radio R+r."],
+  ["ampliacion","r5-21","Rep. 5 · Ej. 21","p. 4","Barra con cargas desigualmente alejadas del eje",16,"Torque y restricciones de aceleración","Marcá qué extremo baja y qué extremo sube justo al soltar. Escribí Newton para cada carga y torque para la barra.",[["único","Aceleraciones de ambas cargas al inicio"]],"Las magnitudes de las aceleraciones lineales dependen de sus distancias al pivote."],
+  ["ampliacion","r5-24","Rep. 5 · Ej. 24","p. 5","Atwood con polea masiva",16,"Newton y torque con dos tensiones","Dibujá los dos bloques y la polea por separado. Uní a y α por el punto de contacto con la cuerda.",[["único","Aceleración angular al liberar el sistema"]],"La diferencia de tensiones produce torque. Una polea con inercia exige dos tensiones en la cuenta."],
+  ["ampliacion","r5-28","Rep. 5 · Ej. 28","p. 6","Frenado de un rígido por torque constante",12,"Cinemática y energía angular","Armá la inercia total y usá el tiempo que tarda en detenerse para hallar α.",[["a","Aceleración angular"],["b","Torque"],["c","Energía disipada"],["d","Número de revoluciones"]],"Los dos extremos aportan masa puntual a la inercia."],
+  ["ampliacion","r5-32","Rep. 5 · Ej. 32","p. 7","Péndulo físico con barra y disco",18,"Centro de masa, inercia y ecuación de giro","Hallá el CM común y sumá las inercias con referencia al mismo eje.",[["a","CM e inercia del sistema"],["b","Ecuación para α"]],"La caída gravitatoria sigue al CM total. El giro usa la inercia respecto del pivote."],
+  ["ampliacion","r5-33","Rep. 5 · Ej. 33","p. 7","Péndulo de torsión",14,"Momento restaurador proporcional al ángulo","Escribí torque como −κθ y armá la inercia total antes de usar el período.",[["único","Constante de torsión del alambre"]],"Desplazá las inercias de las dos esferas hasta el eje del alambre."],
+  ["ampliacion","r5-34","Rep. 5 · Ej. 34","p. 7","Polea masiva con resorte",17,"Una coordenada para polea, masa y resorte","Marcá a qué lado sube A y a qué lado baja el bloque. Relacioná su rapidez con el giro de la polea.",[["único","Ecuación de movimiento de A"]],"Las dos ramas de la cuerda se mueven con igual rapidez en sentidos opuestos."],
+  ["ampliacion","r5-35","Rep. 5 · Ej. 35","p. 7","Rodadura respecto de una plataforma móvil",24,"Rodadura relativa con momento horizontal","Separá la rapidez del cilindro relativa a la plataforma de su rapidez respecto a tierra.",[["a","Conservación de energía"],["b","Conservación de pₓ"],["c","Ecuación angular del sistema"]],"La plataforma también gana energía cinética. El vínculo de rodadura se escribe respecto de ella."],
+  ["ampliacion","r5-38","Rep. 5 · Ej. 38","p. 8","Rotación al acercar masas al eje",16,"Momento angular con inercia variable","Ubicá el CM de los patinadores y calculá cuánto vale I antes y después de achicar la separación.",[["a","Movimiento inicial del conjunto"],["b","Rapidez angular después"],["c","Comparación de energías"]],"El trabajo que hacen los patinadores puede cambiar K sin cambiar L."],
+  ["ampliacion","r5-40","Rep. 5 · Ej. 40","pp. 8–9","Cubo que empieza a girar al topar con una esquina",13,"Impulso angular respecto al punto de contacto","Elegí la esquina P para medir el momento angular justo antes y justo después del golpe.",[["único","Velocidad angular inmediatamente posterior"]],"Usá Steiner para llevar la inercia al punto que recibe el impulso."],
+  ["ampliacion","r5-41","Rep. 5 · Ej. 41","p. 9","Choque angular seguido de subida",22,"Cambio de ley y geometría del CM","Separá caída de la masa, enganche y subida. Marcá el brazo de la masa entrante y la altura de cada pieza al subir.",[["a","Momento lineal"],["b","Momento angular"],["c","Energía por etapas"],["d","Ángulo final"]],"El brazo del impacto y la distancia del punto de enganche al eje son dos geometrías distintas."],
+  ["fundamentos","r1-2","Rep. 1 · Ej. 2","p. 1","Encontrar potencias por dimensiones",10,"Unidades y coherencia dimensional","Escribí la dimensión de T, L, masa y g y compará los exponentes.",[["único","Relación entre período, largo, masa y g"]],"Las dimensiones fijan exponentes. El valor de la constante adimensional requiere otra información."],
+  ["fundamentos","r1-5","Rep. 1 · Ej. 5","p. 2","Leer áreas y pendientes de un gráfico de velocidad",10,"Gráficas y cambio de sentido","Identificá qué mide la pendiente y qué mide el área con signo debajo de v(t).",[["1","Posición a 1 s"],["2","Aceleración a 2 s"],["3","Posición a 4 s"],["4","Explicar el cambio de sentido"]],"La velocidad puede ser negativa y la rapidez seguir aumentando."],
+  ["fundamentos","r1-6","Rep. 1 · Ej. 6","p. 2","Obtener distancia desde una gráfica de aceleración",12,"Integración por tramos","Primero calculá áreas debajo de a(t). Después dibujá v(t) y calculá las áreas correspondientes.",[["a","Rapidez en 10 y 20 s"],["b","Distancia total"]],"Sumá áreas geométricas si piden distancia; con signo si piden desplazamiento."],
+  ["fundamentos","r1-7","Rep. 1 · Ej. 7","p. 2","Posición, velocidad y distancia con giro de sentido",12,"Derivar y separar intervalos","Derivá x(t) y encontrá cuándo v cambia de signo.",[["a","Unidades de las constantes"],["b","Velocidad y aceleración"],["c","Instante en reposo"],["d","Distancia, posición y aceleración"],["e","Distancia entre 4 y 6 s"]],"Si da la vuelta, separá en dos tramos y sumá sus distancias."],
+  ["fundamentos","r1-15","Rep. 1 · Ej. 15","p. 4","Movimiento con dos aceleraciones sucesivas",15,"Condiciones iniciales por etapas","Calculá posición y velocidad al final de la etapa con motor. Usalas como datos iniciales de la caída libre.",[["a","Altura máxima"],["b","Tiempo total"]],"Reiniciar el reloj en el cambio de etapa evita mezclar tiempos."],
+  ["fundamentos","r1-21","Rep. 1 · Ej. 21","pp. 5–6","Encuentro entre una pelota y una persona en movimiento",18,"Igualación de trayectorias y selección de raíces","Escribí la posición de la pelota y la de las manos. Igualá ambas coordenadas en el instante de captura.",[["a","Posiciones"],["b","Tiempos posibles"],["c","Rapidez y sentido del arquero"],["d","Velocidad en el encuentro"]],"Cada raíz vertical exige una velocidad horizontal distinta. Discutí cuál tiene sentido."],
+  ["fundamentos","r1-22","Rep. 1 · Ej. 22","p. 6","Proyectil que sale desde una altura",15,"Tiro a un nivel distinto del inicial","Tomá el piso como y=0 y fijá y inicial en 15 m. Para el impacto buscá la raíz positiva.",[["a","Posición y velocidad"],["b","Tiempo de vuelo"],["c","Alcance horizontal"],["d","Altura máxima"],["e","Dirección al tocar el suelo"]],"Distinguí el tiempo de la cima del tiempo de contacto con el piso."],
+  ["fundamentos","r1-24","Rep. 1 · Ej. 24","p. 6","Caer con velocidad tangente a una rampa",18,"Condición de velocidad y de posición","Escribí que la velocidad al llegar tiene la inclinación de la rampa y que el punto de llegada está sobre ella.",[["único","Distancia antes de la rampa para saltar"]],"La tangencia se impone sobre la velocidad. El encuentro también debe cumplir la ecuación geométrica de la rampa."],
+  ["fundamentos","r1-25","Rep. 1 · Ej. 25","pp. 6–7","Dos ángulos para alcanzar la misma altura en una pared",14,"Ecuación de trayectoria","Despejá t de la ecuación horizontal. En la vertical usá 1/cos²θ=1+tan²θ.",[["a","Altura de impacto"],["b","Ángulos para el blanco más bajo"]],"La ecuación cuadrática puede dar dos ángulos válidos."],
+  ["fundamentos","r1-26","Rep. 1 · Ej. 26","p. 7","Alcance máximo medido a lo largo de una pendiente",16,"Proyectil y optimización","Imponé el encuentro y=x tan α. Convertí la coordenada x en una distancia sobre la superficie.",[["a","Alcance sobre la pendiente"],["b","Ángulo que lo maximiza"]],"La distancia horizontal y el alcance a lo largo de la pendiente se relacionan por cos α."],
+  ["fundamentos","r1-27","Rep. 1 · Ej. 27","p. 7","Tiro con aceleración horizontal y vertical",11,"Cinemática en dos ejes","Escribí una ecuación por eje e identificá cuál determina cuándo llega al suelo.",[["a","Distancia horizontal"],["b","Altura máxima"],["c","Velocidad final"]],"El viento horizontal cambia x y vₓ. La ecuación vertical conserva su forma."],
+  ["fundamentos","r1-28","Rep. 1 · Ej. 28","p. 7","Dos objetos con la misma caída gravitatoria",12,"Movimiento relativo en vuelo","Igualá las posiciones en el encuentro y compará los términos gravitatorios.",[["a","Dirección inicial"],["b","Rapidez inicial"]],"Los dos objetos tienen la misma aceleración vertical, por eso esos términos se cancelan."],
+  ["fundamentos","r1-29","Rep. 1 · Ej. 29","p. 8","Punto de intersección que cambia al girar una recta",12,"Vínculo geométrico y derivadas","Expresá primero la altura de la intersección en función del ángulo. Después reemplazá θ(t) y derivá.",[["único","Posición, velocidad y aceleración del cruce"]],"El punto de intersección puede alejarse del pivote mientras gira la barra."],
+  ["fundamentos","r1-30","Rep. 1 · Ej. 30","p. 8","Desplazamiento radial mientras gira el disco",16,"Coordenadas polares con radio variable","Escribí r(t) y θ(t). Derivá teniendo en cuenta que los versores también giran.",[["a","Coordenadas en reposo respecto al disco"],["b","Coordenadas al caminar"],["c","Velocidad"],["d","Aceleración"],["e","Trayectoria"]],"Con r variable aparece un término tangencial incluso si ω es constante."],
+  ["fundamentos","r1-33","Rep. 1 · Ej. 33","pp. 8–9","Movimiento circular con velocidad angular variable",12,"Derivar e integrar en el círculo","Integrá ω para hallar θ y derivá ω para hallar α.",[["a","Aceleración angular"],["b","Ángulo"],["c","Vectores v y a"],["d","Vueltas"]],"La aceleración tiene una parte radial y otra tangencial."],
+  ["fundamentos","r1-39","Rep. 1 · Ej. 39","pp. 10–11","Radio de giro mínimo con rapidez que aumenta",16,"Cota centrípeta y geometría del arco","Relacioná el ángulo total del giro con la distancia recorrida y decidí en qué instante a radial es máxima.",[["a","Giro en función de t"],["b","Radio mínimo"]],"Al terminar el semicírculo la distancia es πR y la rapidez es la mayor del tramo."],
+  ["fundamentos","r1-40","Rep. 1 · Ej. 40","p. 11","Lluvia vista desde el tren y desde el suelo",8,"Reconstrucción de velocidad relativa","En el marco del tren, la componente horizontal de la lluvia es cero. Sumá la velocidad del tren para volver a tierra.",[["único","Vector velocidad respecto de tierra"]],"El ángulo observado desde tierra conecta las dos componentes."],
+  ["fundamentos","r1-41","Rep. 1 · Ej. 41","p. 11","Corregir el rumbo por viento cruzado",8,"Composición vectorial inversa","Pedí que la componente hacia el este de la velocidad respecto del suelo sea cero.",[["a","Rumbo del avión"],["b","Rapidez respecto al suelo"]],"La rapidez respecto al aire se usa al calcular el ángulo de corrección."],
+  ["fundamentos","r1-44","Rep. 1 · Ej. 44","p. 11","Objeto que cae dentro de un ascensor móvil",17,"Encuentro en dos referencias","Escribí desde tierra la altura del piso y la del tornillo. Igualalas en el impacto.",[["a","Tiempo desde el ascensor"],["b","Velocidad relativa"],["c","Tiempo y velocidad desde tierra"],["d","Distancia desde tierra"],["e","Ascensor con aceleración"]],"Con el ascensor acelerado, la aceleración relativa vertical incluye g+a en magnitud."],
+  ["fundamentos","r1-45","Rep. 1 · Ej. 45","p. 12","Lanzamiento perpendicular desde un móvil acelerado",15,"Integración y velocidad relativa en ejes inclinados","Integrá a=kt hasta la cima. Después sumá vectores para obtener la velocidad inicial del proyectil vista desde el suelo.",[["a","Velocidad del carrito en la cima"],["b","Distancia para caer al pie"]],"Para que el vuelo termine debajo de la cima, la componente horizontal inicial tiene que anularse."],
+  ["fundamentos","r1-46","Rep. 1 · Ej. 46","pp. 12–13","Aro que el proyectil cruza horizontalmente",14,"Tiro relativo con condición de vértice","Sumá la velocidad del vagón a la del tiro y exigí v_y=0 al cruzar el aro.",[["a","Velocidad respecto al vagón"],["b","Velocidad respecto al piso"],["c","Tiempo y ángulo"],["d","Distancia inicial"],["e","Ángulo visto desde tierra"]],"La rapidez horizontal respecto al suelo arrastra la velocidad del vagón."],
+  ["fundamentos","r2-4","Rep. 2 · Ej. 4","p. 1","Fuerza de contacto entre dos bloques",8,"Elegir conjunto y subsistema","Hallá primero la aceleración del conjunto. Luego aislá el bloque que recibe solo la fuerza de contacto en horizontal.",[["a","Contacto al empujar uno"],["b","Contacto al empujar el otro"]],"Al invertir el cuerpo empujado, cambia la masa que el contacto tiene que acelerar."],
+  ["fundamentos","r2-5","Rep. 2 · Ej. 5","pp. 1–2","Peso aparente en un ascensor",8,"Normal y aceleración","Dibujá a la persona y usá arriba como positivo. La balanza mide N/g.",[["a","Quieto"],["b","Acelera hacia arriba"],["c","Baja a velocidad constante"],["d","Caída libre"]],"La lectura depende de la aceleración, incluso si dos situaciones tienen velocidades distintas."],
+  ["fundamentos","r2-8","Rep. 2 · Ej. 8","p. 2","Bloque quieto respecto a una cuña acelerada",10,"Restricción en un marco móvil","En el marco del suelo, el bloque solo acelera horizontalmente si queda fijo a la cuña.",[["único","Aceleración para que se mantengan juntos"]],"Una normal inclinada tiene componente horizontal aunque la cuña sea lisa."],
+  ["fundamentos","r2-9","Rep. 2 · Ej. 9","p. 2","Tracción inclinada y pérdida de apoyo en una rampa",10,"Proyección de fuerza y condición N=0","Separá fuerzas paralelas y perpendiculares a la rampa. Usá la tensión máxima provista.",[["a","Aceleración máxima"],["b","Masa mínima para seguir en contacto"]],"La tensión alivia la normal por su componente perpendicular."],
+  ["fundamentos","r2-12","Rep. 2 · Ej. 12","p. 3","Atwood con centro de polea móvil",12,"Longitud de cuerda y aceleraciones","Escribí la suma de las dos longitudes verticales medidas desde la polea. Derivala antes de reemplazar.",[["a","Aceleraciones de los bloques"],["b","Aceleración de la polea"]],"La aceleración de la polea es el promedio de las dos en un mismo eje vertical."],
+  ["fundamentos","r2-16","Rep. 2 · Ej. 16","p. 4","Obrero que tira de la cuerda de su plataforma",9,"Elección del sistema con dos tensiones externas","Aislá obrero + elevador juntos y contá todos los lugares donde la cuerda tira hacia arriba.",[["único","Aceleración de la plataforma"]],"La cuerda tira del obrero y también de la plataforma."],
+  ["fundamentos","r2-17","Rep. 2 · Ej. 17","p. 4","Empuje en un balde acelerado",11,"Fluido y peso aparente","Calculá primero el empuje del fluido en reposo y después el gradiente de presión cuando acelera el balde.",[["a","Masa límite"],["b","Tensión con balde acelerado"]],"La diferencia de presión corresponde a una gravedad efectiva g+a si el balde acelera hacia arriba."],
+  ["fundamentos","r2-18","Rep. 2 · Ej. 18","p. 4","Equilibrio de un nudo y fricción máxima",10,"Tensiones en direcciones distintas","Dibujá tres fuerzas en el nudo. Conectá la tensión horizontal con el rozamiento límite de B.",[["único","Peso máximo de A"]],"El ángulo del cable inclinado vincula la tensión horizontal con el peso colgante."],
+  ["fundamentos","r2-20","Rep. 2 · Ej. 20","p. 4","Rozamiento límite con ángulo de fuerza variable",13,"Ecuación umbral y cálculo numérico","Proyectá F sobre x y y, y resolvé cuándo el rozamiento necesario iguala su máximo.",[["a","Fricción durante el reposo"],["b","Ecuación crítica"],["c","Ángulo para F grande"],["d","Valor numérico"]],"Al cambiar θ cambian tanto la componente horizontal de F como la normal."],
+  ["fundamentos","r2-22","Rep. 2 · Ej. 22","p. 5","Sistema que puede quedar quieto o deslizar en dos sentidos",16,"Rozamiento estático y cinético","Empezá suponiendo reposo. Encontrá el rozamiento necesario y comparalo con su cota.",[["único","Intervalo de equilibrio y aceleración para ambos sentidos"]],"Para cada sentido de deslizamiento, volvé a elegir el signo de la fuerza cinética."],
+  ["fundamentos","r2-24","Rep. 2 · Ej. 24","p. 6","Dos bloques superpuestos y una polea móvil",20,"Rozamiento y vínculo de tres movimientos","Escribí la longitud total de la cuerda con dos ramales móviles. Analizá juntos y separados en ese orden.",[["a","Fricción si se mueven juntos"],["b","Masa máxima sin patinar"],["c","Vínculo de velocidades"],["d","Aceleraciones al deslizar"]],"La polea móvil transforma la suma de los avances de los bloques en el descenso de M."],
+  ["fundamentos","r2-25","Rep. 2 · Ej. 25","pp. 6–7","Cuerda cuya dirección vecina cambia con el movimiento",18,"Vínculo geométrico de ángulo variable","Llamá L a la longitud del tramo inclinado. Escribí la geometría antes de derivar.",[["a","Condición de equilibrio"],["b","Aceleración para la geometría de la figura"]],"La relación de aceleraciones depende además de la rapidez si la cuerda cambia de dirección y el sistema ya se mueve."],
+  ["fundamentos","r2-26","Rep. 2 · Ej. 26","p. 7","Tambor giratorio con piso que baja",10,"Normal centrípeta y rozamiento vertical","Dibujá las fuerzas de la pared. Usá Newton radial para la normal y equilibrio vertical para sostener a la persona.",[["único","Velocidad angular mínima"]],"La normal crece con ω² y eso aumenta la fuerza de rozamiento disponible."],
+  ["fundamentos","r2-29","Rep. 2 · Ej. 29","p. 8","Embudo giratorio con intervalo de velocidades",17,"Dinámica circular y fricción que puede invertir sentido","Proponé un sentido para la fricción y resolvé las componentes vertical y radial de Newton.",[["a","Fricción y normal"],["b","Velocidad angular máxima"],["c","Velocidad angular mínima"]],"El signo de la fricción encontrada indica hacia qué lado de la pendiente tira."],
+  ["fundamentos","r2-32","Rep. 2 · Ej. 32","pp. 8–9","Avión sujeto a hilo con sustentación inclinada",14,"Proyección que elimina una incógnita","Dibujá la sustentación, el peso y la tensión. Proyectá en una dirección que elimine la sustentación.",[["a","Tensión"],["b","Ángulo de pérdida de tensión"]],"El radio de la trayectoria es la proyección horizontal de la longitud del hilo."],
+  ["fundamentos","r2-33","Rep. 2 · Ej. 33","p. 9","Dos cuerdas inclinadas en un giro horizontal",13,"Radial y vertical con dos tensiones","Sacá el ángulo de las cuerdas con la geometría de la figura. Usá una ecuación radial y otra vertical.",[["único","Las dos tensiones como función de ω"]],"Sumar o restar las ecuaciones aísla la suma y la diferencia de tensiones."],
+  ["fundamentos","r2-35","Rep. 2 · Ej. 35","p. 9","Resorte con intervalo de posiciones de reposo",9,"Fricción estática con resorte","Expresá la deformación con signo y equilibrá la fuerza elástica con rozamiento estático.",[["a","Fricción en x₁"],["b","Posiciones extremas de equilibrio"]],"El resorte puede estar comprimido o estirado. Comprobá ambos límites del módulo de fricción."],
+  ["fundamentos","r2-36","Rep. 2 · Ej. 36","p. 10","Resorte que se estira al girar",11,"Centrípeta con radio dependiente del resorte","Escribí el radio total como largo de la varilla más largo actual del resorte.",[["a","Longitud según ω"],["b","Gráfica contra ω²"]],"El resorte determina tanto la fuerza radial como una parte del radio."],
+  ["fundamentos","r2-38","Rep. 2 · Ej. 38","pp. 10–11","Cuenta en anillo giratorio con resorte horizontal",17,"Giro horizontal y equilibrio sobre una guía","Dibujá la aceleración hacia el eje de giro. Proyectá sobre la tangente de la guía para eliminar la normal.",[["a","Relación entre ω y ángulo con resorte"],["b","Caso sin resorte"]],"Aunque la cuenta esté quieta respecto del anillo, acelera circularmente respecto al suelo."],
+  ["fundamentos","r2-39","Rep. 2 · Ej. 39","p. 11","Dos resortes que actúan sobre el mismo desplazamiento",9,"Resorte equivalente por suma de fuerzas","Escribí cuánto cambia cada fuerza al desplazar la masa una distancia x.",[["a","Ecuación de movimiento"],["b","Constante equivalente"]],"Las dos variaciones de fuerza se suman como restauradoras."],
+  ["fundamentos","r2-40","Rep. 2 · Ej. 40","p. 11","Dos resortes en serie",10,"Resorte equivalente por suma de deformaciones","Aislá el nudo sin masa y relacioná los estiramientos con el desplazamiento total.",[["a","Deformación total"],["b","Tensiones iguales"],["c","Constante equivalente"]],"El mismo esfuerzo produce estiramientos distintos. Se suman las deformaciones."],
+  ["fundamentos","r2-41","Rep. 2 · Ej. 41","p. 11","Rigidez equivalente de resortes con una polea",12,"Vínculo geométrico de desplazamientos","Calculá cuántas veces aparece el movimiento de la polea en la longitud de la cuerda y cuántos ramales la tiran.",[["único","Constante equivalente del sistema"]],"El factor de dos aparece una vez en la fuerza y otra en el desplazamiento."],
+  ["fundamentos","r2-42","Rep. 2 · Ej. 42","p. 12","Arrastre proporcional a la velocidad",14,"Ecuación de movimiento con fuerza variable","Elegí abajo positivo y usá el peso y el término de Stokes en Newton. Buscá primero la velocidad terminal.",[["a","Ecuación de Newton"],["b","Velocidad, posición y gráficas"]],"El movimiento tiende a una rapidez límite donde las fuerzas verticales se equilibran."],
+  ["fundamentos","r2-43","Rep. 2 · Ej. 43","p. 12","Arrastre cuadrático y velocidad terminal",11,"Umbral de fuerza a velocidad conocida","Igualá la energía de la caída corta con la rapidez objetivo. En el régimen terminal, equilibrá peso y arrastre.",[["a","Ecuación de movimiento"],["b","Radio del paracaídas"]],"La fuerza de arrastre depende del área del círculo y del cuadrado de la rapidez."],
+  ["fundamentos","r2-44","Rep. 2 · Ej. 44","p. 12","Obtener la masa de un planeta desde una órbita",13,"Gravitación e inferencia orbital","Igualá gravedad y fuerza centrípeta para una órbita circular. Expresá la rapidez con el período.",[["a","Masa terrestre desde la órbita de la Luna"],["b","Densidad media"],["c","Gráfica de g con altura"]],"El radio orbital se mide desde el centro. El radio de la Tierra entra en la densidad y en g al nivel del mar."],
+  ["fundamentos","r2-46","Rep. 2 · Ej. 46","p. 12","Órbita que queda sobre el mismo punto de la Tierra",10,"Restricción de período, plano y sentido","Fijá el período al de rotación de la Tierra y usá ecuación radial. Determiná el plano de la órbita.",[["único","Altura y latitud posibles"]],"Para quedar sobre el mismo punto, la órbita es ecuatorial y gira con la Tierra."],
+  ["fundamentos","r2-50","Rep. 2 · Ej. 50","p. 13","Peso aparente cero por rotación de la Tierra",8,"Peso, normal y centrípeta en el ecuador","En el ecuador, planteá Newton radial e imponé N=0.",[["único","Período crítico y consecuencia de acortarlo"]],"Al superar el giro crítico haría falta una fuerza adicional hacia el centro para mantener el contacto."],
+  ["fundamentos","r2-51","Rep. 2 · Ej. 51","p. 13","Dos satélites unidos, con radios distintos y ω común",14,"Gravitación y vínculo de dos cuerpos","Escribí una ecuación radial para cada masa y sumalas para eliminar la tensión.",[["a","Velocidad angular"],["b","Tensión"],["c","Estimación con los datos"]],"La cuerda tira hacia afuera de la masa interior y hacia adentro de la exterior."],
+  ["fundamentos","r2-53","Rep. 2 · Ej. 53","p. 13","Cambio de rapidez en un encuentro gravitatorio",25,"Integración numérica y cambio de marco","Integrá el movimiento en el marco del planeta y transformá las velocidades inicial y final al marco del observador.",[["único","Simular ganancia y pérdida de rapidez"]],"El encuentro cambia la dirección relativa. Al sumar la misma velocidad planetaria, los módulos terrestres pueden cambiar."],
+  ["apoyo","r0-7","Rep. 0 · Ej. 7","p. 3","Proyecciones para destrabarte",8,"Trigonometría","Con el triángulo del dibujo, identificá qué cateto queda junto al ángulo y cuál queda enfrente.",[["único","Ángulos y componentes del vector"]],"Usalo si te frenan las proyecciones. Después volvé al ejercicio principal."],
+  ["apoyo","r0-3","Rep. 0 · Ej. 3","p. 1","Triángulos rectángulos encadenados",8,"Geometría","Identificá las hipotenusas en orden y expresá cada cateto a partir de a y b.",[["único","Longitudes y ángulos"]],"La hipotenusa del primer triángulo pasa a ser cateto del segundo."],
+  ["apoyo","r0-6","Rep. 0 · Ej. 6","p. 2","Reconstruir un vector desde sus componentes",5,"Vectores","Dibujá las componentes con sus signos y usá Pitágoras para el módulo.",[["único","Módulo y dirección"]],"La tangente por sí sola admite dos cuadrantes. Mirá los signos."],
+  ["apoyo","r0-9","Rep. 0 · Ej. 9","p. 3","Altura en un círculo a partir del radio",5,"Geometría del rulo","Proyectá el radio inclinado sobre la vertical y comparalo con el radio vertical completo.",[["único","Longitud BA"]],"Es la misma geometría que aparece al calcular la altura del bloque en el rulo."],
+  ["apoyo","r0-10","Rep. 0 · Ej. 10","p. 3","Cinco controles de álgebra",7,"Paréntesis, signos y raíces","Corregí cada ejemplo usando paréntesis, producto notable o Pitágoras.",[["único","Corregir los cinco errores del repartido"]],"Al elevar una diferencia al cuadrado aparece el término cruzado."],
+  ["apoyo","r0-17","Rep. 0 · Ej. 17","p. 4","Eliminar una incógnita en dos ecuaciones",12,"Despeje de v y k","Usá la segunda ecuación para expresar v² antes de sustituir en la primera.",[["único","Determinar v y k"]],"Si elevás al cuadrado, volvé a verificar el signo y el dominio en las ecuaciones originales."]
 ];

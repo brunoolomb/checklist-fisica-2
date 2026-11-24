@@ -1,15 +1,18 @@
 (() => {
   const phases = [
-    ["lunes", "Lunes · Empezá a las 19:30", "Practicá tres métodos. Hacé una pausa corta después de cada par de ejercicios."],
-    ["martes", "Martes · Cerrá los incisos y hacé el simulacro", "Protegé el bloque del simulacro aunque tengas poco tiempo."],
-    ["variantes", "Martes · Variantes para apuntar al 100", "Seguí el orden de la lista hasta donde llegues."],
-    ["apoyo", "Apoyo · Solo si te tranca la trigonometría", ""],
+    ["lunes", "Base · Retomá donde quedaste", "Practicá los tres planteos más parecidos al parcialito. Hacé una pausa corta después de cada par de ejercicios."],
+    ["martes", "Antes del miércoles · Cerrá los incisos y hacé el simulacro", "Reservá tiempo para rehacer el parcialito completo con el formulario."],
+    ["variantes", "Después del simulacro · Métodos que pueden cambiar el planteo", "Empezá por el 13 de Energía para conectar rozamiento y vuelo. Después seguí el orden hasta donde llegues."],
+    ["ampliacion", "Más métodos · Repartidos 3 a 5", "Elegí ejercicios de esta lista para cubrir los métodos restantes de energía, momento y rígidos."],
+    ["fundamentos", "Fundamentos · Cinemática y dinámica", "Abrí el ejercicio de la herramienta que te esté faltando. El tramo final incluye otros capítulos del curso."],
+    ["apoyo", "Apoyo · Geometría, vectores y álgebra", "Usá estos ejercicios para destrabarte y después volvé a Física."],
   ];
   const tasks = window.physicsChecklist.map(
     ([phase, id, source, page, title, minutes, topic, start, parts, hint]) =>
       ({ phase, id, source, page, title, minutes, topic, start, parts, hint }),
   );
-  const core = tasks.filter((task) => task.phase !== "apoyo");
+  const examPhases = new Set(["lunes", "martes", "variantes"]);
+  const core = tasks.filter((task) => examPhases.has(task.phase));
   const model = window.physicsProgress;
   const $ = (id) => document.getElementById(id);
   const views = new Map();
@@ -17,7 +20,8 @@
   const pickerSupported = typeof window.showSaveFilePicker === "function" &&
     typeof window.showOpenFilePicker === "function";
   let progress = model.blank();
-  let filter = "all";
+  let filter = "exam";
+  let search = "";
   let localOK = true;
   let linkedFile;
   let next;
@@ -32,6 +36,10 @@
 
   function doneCount(task) {
     return task.parts.filter(([part]) => status(task, part) === "Rehecho").length;
+  }
+
+  function searchable(text) {
+    return text.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "");
   }
 
   function mount() {
@@ -93,13 +101,17 @@
   }
 
   function refresh() {
+    const words = searchable(search).split(/\s+/).filter(Boolean);
     for (const task of tasks) {
       const view = views.get(task.id);
       const done = doneCount(task);
       view.count.textContent = done + "/" + task.parts.length;
       view.count.setAttribute("aria-label", done + " de " + task.parts.length + " incisos rehechos");
       view.details.classList.toggle("is-done", done === task.parts.length);
-      view.details.hidden = filter === "pending" && (done === task.parts.length || task.phase === "apoyo");
+      const indexedText = searchable([task.source, task.title, task.topic].join(" "));
+      view.details.hidden = (filter !== "all" && !examPhases.has(task.phase)) ||
+        (filter === "pending" && done === task.parts.length) ||
+        !words.every((word) => indexedText.includes(word));
       for (const [part, select] of view.selects) select.value = status(task, part);
       if (document.activeElement !== view.note) {
         view.note.value = progress.records[model.noteKey(task.id)]?.value ?? "";
@@ -120,7 +132,10 @@
       ? [next.source, next.page, next.minutes + " min"].join(" · ")
       : "Repasá los errores que anotaste en el simulacro.";
     $("next-button").hidden = !next;
-    $("empty").hidden = Boolean(next) || filter !== "pending";
+    $("empty").hidden = [...phaseViews.values()].some((section) => !section.hidden);
+    $("empty").textContent = search.trim()
+      ? "No hay coincidencias en esta vista. Probá otra búsqueda o elegí Todos."
+      : "Terminaste la ruta del parcial. En Todos están los ejercicios adicionales.";
   }
 
   function save() {
@@ -221,8 +236,17 @@
       refresh();
     });
   }
+  $("exercise-search").addEventListener("input", ({ target }) => {
+    search = target.value;
+    refresh();
+  });
   $("next-button").addEventListener("click", () => {
     const view = views.get(next.id);
+    if (view.details.hidden) {
+      $("exercise-search").value = "";
+      search = "";
+      refresh();
+    }
     view.details.open = true;
     view.details.querySelector("summary").focus({ preventScroll: true });
     view.details.scrollIntoView({ block: "start" });
